@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMI Calculator - ToolMitra</title>
+  <meta name="description" content="Loan EMI, total interest aur total payment calculate karo with ToolMitra EMI Calculator.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#f7f7ed",
+              100: "#ecebd1",
+              200: "#d9d69d",
+              300: "#c8c168",
+              400: "#b4ab3d",
+              500: "#998d28",
+              600: "#7a6f1f",
+              700: "#5d5418",
+              800: "#423c11",
+              900: "#252108"
+            },
+            ink: "#172033",
+            accent: "#d96c3f"
+          },
+          boxShadow: {
+            soft: "0 18px 45px rgba(23, 32, 51, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="tool-page-bg text-ink">
+  <div class="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
+    <a href="index.html" class="inline-flex items-center text-sm font-semibold text-brand-700">← Home par wapas</a>
+    <div class="mt-6 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+      <section class="rounded-3xl bg-white p-5 shadow-soft sm:p-7">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-accent">EMI Calculator</p>
+        <h1 class="mt-2 text-3xl font-black">Loan EMI turant nikalo</h1>
+        <form id="emiForm" class="mt-6 space-y-4" novalidate>
+          <div>
+            <label for="loanAmount" class="mb-2 block text-sm font-semibold">Loan Amount *</label>
+            <input id="loanAmount" type="number" min="1" class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
+          </div>
+          <div>
+            <label for="interestRate" class="mb-2 block text-sm font-semibold">Interest Rate (% per year) *</label>
+            <input id="interestRate" type="number" min="0.01" step="0.01" class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
+          </div>
+          <div>
+            <label for="loanTenure" class="mb-2 block text-sm font-semibold">Loan Tenure (months) *</label>
+            <input id="loanTenure" type="number" min="1" class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
+          </div>
+          <button type="submit" class="rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">Calculate karo</button>
+          <p id="emiMessage" class="text-sm font-medium"></p>
+        </form>
+      </section>
+      <section class="rounded-3xl bg-white p-5 shadow-soft sm:p-7">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-accent">Result</p>
+        <h2 class="mt-2 text-2xl font-black">EMI summary</h2>
+        <div class="mt-6 grid gap-4">
+          <div class="rounded-3xl bg-stone-50 p-5">
+            <p class="text-xs uppercase tracking-[0.2em] text-stone-500">Monthly EMI</p>
+            <p id="monthlyEmi" class="mt-3 text-3xl font-black">₹0</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-3xl bg-stone-50 p-5">
+              <p class="text-xs uppercase tracking-[0.2em] text-stone-500">Total Interest</p>
+              <p id="totalInterest" class="mt-3 text-2xl font-black">₹0</p>
+            </div>
+            <div class="rounded-3xl bg-stone-50 p-5">
+              <p class="text-xs uppercase tracking-[0.2em] text-stone-500">Total Payment</p>
+              <p id="totalPayment" class="mt-3 text-2xl font-black">₹0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/emi-calculator.js"></script>
+</body>
+</html>

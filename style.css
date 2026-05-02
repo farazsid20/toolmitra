@@ -1,0 +1,90 @@
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tool-card,
+.resume-preview,
+.rounded-3xl,
+.rounded-2xl {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+}
+
+.tool-page-bg {
+  background:
+    radial-gradient(circle at top right, rgba(217, 108, 63, 0.14), transparent 28%),
+    linear-gradient(180deg, #faf8ef 0%, #f6f4eb 100%);
+  min-height: 100vh;
+}
+
+.drop-active {
+  border-color: #998d28 !important;
+  background: rgba(236, 235, 209, 0.8) !important;
+}
+
+.resume-preview {
+  min-height: 640px;
+}
+
+.resume-header {
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.resume-section-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #78716c;
+}
+
+.resume-minimal .resume-header {
+  background: #fafaf9;
+}
+
+.resume-modern {
+  background: linear-gradient(180deg, #fff 0%, #f5f5f4 100%);
+}
+
+.resume-modern .resume-header {
+  background: linear-gradient(135deg, #172033, #24314e);
+  color: #fff;
+}
+
+.resume-modern .resume-header p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.resume-modern .resume-section-title {
+  color: #d96c3f;
+}
+
+.resume-classic {
+  background: #fffdfa;
+}
+
+.resume-classic .resume-header {
+  background: #f3eadb;
+  border-bottom: 2px solid #d6c2a3;
+}
+
+.resume-classic .resume-section-title {
+  color: #7a6f1f;
+}
+
+@media (max-width: 640px) {
+  .resume-preview {
+    min-height: 0;
+  }
+}

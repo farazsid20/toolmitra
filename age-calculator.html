@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator - ToolMitra</title>
+  <meta name="description" content="Date of birth se exact age in years, months and days calculate karo.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#f7f7ed",
+              100: "#ecebd1",
+              200: "#d9d69d",
+              300: "#c8c168",
+              400: "#b4ab3d",
+              500: "#998d28",
+              600: "#7a6f1f",
+              700: "#5d5418",
+              800: "#423c11",
+              900: "#252108"
+            },
+            ink: "#172033",
+            accent: "#d96c3f"
+          },
+          boxShadow: {
+            soft: "0 18px 45px rgba(23, 32, 51, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="tool-page-bg text-ink">
+  <div class="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:px-8">
+    <a href="index.html" class="inline-flex items-center text-sm font-semibold text-brand-700">← Home par wapas</a>
+    <div class="mt-6 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <section class="rounded-3xl bg-white p-5 shadow-soft sm:p-7">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-accent">Age Calculator</p>
+        <h1 class="mt-2 text-3xl font-black">Apni age exact nikalo</h1>
+        <form id="ageForm" class="mt-6 space-y-4" novalidate>
+          <div>
+            <label for="dob" class="mb-2 block text-sm font-semibold">Date of Birth *</label>
+            <input id="dob" type="date" class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
+          </div>
+          <button type="submit" class="rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">Calculate karo</button>
+          <p id="ageMessage" class="text-sm font-medium"></p>
+        </form>
+      </section>
+      <section class="rounded-3xl bg-white p-5 shadow-soft sm:p-7">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-accent">Result</p>
+        <h2 class="mt-2 text-2xl font-black">Age breakdown</h2>
+        <div class="mt-6 grid gap-4 sm:grid-cols-3">
+          <div class="rounded-3xl bg-stone-50 p-5 text-center">
+            <p class="text-xs uppercase tracking-[0.2em] text-stone-500">Years</p>
+            <p id="ageYears" class="mt-3 text-3xl font-black">0</p>
+          </div>
+          <div class="rounded-3xl bg-stone-50 p-5 text-center">
+            <p class="text-xs uppercase tracking-[0.2em] text-stone-500">Months</p>
+            <p id="ageMonths" class="mt-3 text-3xl font-black">0</p>
+          </div>
+          <div class="rounded-3xl bg-stone-50 p-5 text-center">
+            <p class="text-xs uppercase tracking-[0.2em] text-stone-500">Days</p>
+            <p id="ageDays" class="mt-3 text-3xl font-black">0</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/age-calculator.js"></script>
+</body>
+</html>
