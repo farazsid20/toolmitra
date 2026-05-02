@@ -1,3 +1,4 @@
+// Developed by Ahmad Faraz Siddiqui
 const pdfInput = document.querySelector("#pdfInput");
 
 if (pdfInput) {

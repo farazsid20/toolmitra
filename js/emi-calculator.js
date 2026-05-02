@@ -1,3 +1,4 @@
+// Developed by Ahmad Faraz Siddiqui
 const emiForm = document.querySelector("#emiForm");
 
 if (emiForm) {

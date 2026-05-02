@@ -1,3 +1,4 @@
+// Developed by Ahmad Faraz Siddiqui
 const toolDirectory = [
   { name: "Resume Builder", href: "resume-builder.html", keywords: ["resume", "cv", "job"] },
   { name: "Image Compressor", href: "image-compressor.html", keywords: ["image", "photo", "compress", "png", "jpg"] },

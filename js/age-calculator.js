@@ -1,3 +1,4 @@
+// Developed by Ahmad Faraz Siddiqui
 const ageForm = document.querySelector("#ageForm");
 
 if (ageForm) {

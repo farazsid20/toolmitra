@@ -1,3 +1,4 @@
+// Developed by Ahmad Faraz Siddiqui
 const resumeForm = document.querySelector("#resumeForm");
 
 if (resumeForm) {
@@ -131,7 +132,7 @@ if (resumeForm) {
       y += wrapped.length * 8;
     });
 
-    doc.save("toolmitra-resume.pdf");
+    doc.save("zamtoolmitra-resume.pdf");
     setMessage("PDF ready hai. Download start ho jana chahiye.");
   });
 

@@ -1,3 +1,4 @@
+// Developed by Ahmad Faraz Siddiqui
 const imageInput = document.querySelector("#imageInput");
 
 if (imageInput) {

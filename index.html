@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+<!-- Developed by Ahmad Faraz Siddiqui -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToolMitra - Free Online Tools for India</title>
-  <meta name="description" content="ToolMitra par free online tools use karo - Resume Builder, Image Compressor, PDF to Word, EMI Calculator aur Age Calculator. Simple Hindi/Hinglish UI ke saath.">
-  <meta name="keywords" content="ToolMitra, online tools India, resume builder, image compressor, PDF to Word, EMI calculator, age calculator">
+  <title>ZamToolmitra - Free Online Tools for India</title>
+  <meta name="description" content="ZamToolmitra par free online tools use karo - Resume Builder, Image Compressor, PDF to Word, EMI Calculator aur Age Calculator. Simple Hindi/Hinglish UI ke saath.">
+  <meta name="keywords" content="ZamToolmitra, online tools India, resume builder, image compressor, PDF to Word, EMI calculator, age calculator">
+  <meta name="author" content="Ahmad Faraz Siddiqui">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="ToolMitra - Free Online Tools for India">
+  <meta property="og:title" content="ZamToolmitra - Free Online Tools for India">
   <meta property="og:description" content="Simple Hindi/Hinglish UI ke saath useful online tools aur earning guides.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://example.com/">
@@ -46,8 +48,12 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "ToolMitra",
+      "name": "ZamToolmitra",
       "url": "https://example.com/",
+      "author": {
+        "@type": "Person",
+        "name": "Ahmad Faraz Siddiqui"
+      },
       "description": "Simple Hindi/Hinglish utility website for Indian users.",
       "potentialAction": {
         "@type": "SearchAction",
@@ -63,34 +69,44 @@
     gtag('config', 'GA_MEASUREMENT_ID');
   </script>
 </head>
-<body class="bg-stone-50 text-ink">
-  <header class="relative overflow-hidden border-b border-stone-200 bg-[radial-gradient(circle_at_top_left,_rgba(217,108,63,0.15),_transparent_35%),linear-gradient(135deg,_#fffef8,_#f4f1dd)]">
-    <div class="mx-auto max-w-7xl px-4 pb-12 pt-5 sm:px-6 lg:px-8">
+<body class="site-body text-ink">
+  <div class="site-layer">
+  <header class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 pb-16 pt-5 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between gap-4">
-        <a href="index.html" class="text-2xl font-black tracking-tight text-brand-700">ToolMitra</a>
+        <a href="index.html" class="brand-mark text-2xl font-black tracking-tight text-brand-700">ZamToolmitra</a>
         <nav class="hidden items-center gap-5 text-sm font-medium text-stone-700 md:flex">
           <a href="#popular-tools" class="transition hover:text-brand-700">Popular Tools</a>
           <a href="#earn-guides" class="transition hover:text-brand-700">Earn Guides</a>
           <a href="#ai-tools" class="transition hover:text-brand-700">AI Tools</a>
+          <a href="#about-developer" class="transition hover:text-brand-700">Developer</a>
           <a href="#latest-articles" class="transition hover:text-brand-700">Articles</a>
         </nav>
+        <div class="credit-chip hidden rounded-full px-3 py-2 text-xs font-semibold text-brand-700 md:inline-flex">
+          By Ahmad Faraz Siddiqui
+        </div>
+      </div>
+      <div class="mt-4 md:hidden">
+        <span class="credit-chip inline-flex rounded-full px-3 py-2 text-xs font-semibold text-brand-700">
+          By Ahmad Faraz Siddiqui
+        </span>
       </div>
 
       <div class="grid gap-8 pt-10 md:grid-cols-[1.15fr_0.85fr] md:items-center">
         <div>
-          <span class="inline-flex rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand-700">Fast Online Utility Hub</span>
-          <h1 class="mt-4 max-w-2xl text-4xl font-black leading-tight text-ink sm:text-5xl">
+          <span class="hero-badge inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand-700">Fast Online Utility Hub</span>
+          <h1 class="mt-4 max-w-2xl text-4xl font-black leading-[1.05] text-ink sm:text-6xl">
             Roz ka kaam aasaan banao, bina confusion ke
           </h1>
-          <p class="mt-4 max-w-2xl text-base leading-7 text-stone-700 sm:text-lg">
+          <p class="mt-5 max-w-2xl text-base leading-7 text-stone-700 sm:text-lg">
             Resume banao, image compress karo, EMI nikalo aur useful guides padho. Sab kuch simple Hindi/Hinglish UI ke saath.
           </p>
 
-          <form id="toolSearchForm" class="mt-8 rounded-3xl border border-white/70 bg-white/90 p-3 shadow-soft backdrop-blur">
+          <form id="toolSearchForm" class="glass-panel mt-8 rounded-[2rem] p-3">
             <label for="toolSearch" class="sr-only">Search tools</label>
             <div class="flex flex-col gap-3 sm:flex-row">
-              <input id="toolSearch" type="search" placeholder="Tool ya topic search karo..." class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 text-base outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
-              <button type="submit" class="rounded-2xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">
+              <input id="toolSearch" type="search" placeholder="Tool ya topic search karo..." class="input-modern w-full rounded-2xl px-4 py-3 text-base outline-none transition">
+              <button type="submit" class="primary-button rounded-2xl px-6 py-3 text-sm font-semibold text-white transition">
                 Search karo
               </button>
             </div>
@@ -98,31 +114,31 @@
           </form>
 
           <div class="mt-6 flex flex-wrap gap-3 text-sm">
-            <a href="resume-builder.html" class="rounded-full border border-brand-200 bg-brand-50 px-4 py-2 font-medium text-brand-700">Resume Builder</a>
-            <a href="image-compressor.html" class="rounded-full border border-stone-200 bg-white px-4 py-2 font-medium text-stone-700">Image Compressor</a>
-            <a href="emi-calculator.html" class="rounded-full border border-stone-200 bg-white px-4 py-2 font-medium text-stone-700">EMI Calculator</a>
+            <a href="resume-builder.html" class="credit-chip rounded-full px-4 py-2 font-medium text-brand-700">Resume Builder</a>
+            <a href="image-compressor.html" class="credit-chip rounded-full px-4 py-2 font-medium text-stone-700">Image Compressor</a>
+            <a href="emi-calculator.html" class="credit-chip rounded-full px-4 py-2 font-medium text-stone-700">EMI Calculator</a>
           </div>
         </div>
 
         <div class="grid gap-4">
-          <div class="rounded-3xl border border-white/70 bg-white/90 p-6 shadow-soft">
+          <div class="glass-panel rounded-[2rem] p-6">
             <p class="text-sm font-semibold text-brand-700">Quick Highlights</p>
             <div class="mt-4 grid gap-4 sm:grid-cols-3 md:grid-cols-1">
-              <div class="rounded-2xl bg-stone-50 p-4">
+              <div class="metric-card rounded-2xl p-4">
                 <p class="text-2xl font-black text-ink">5+</p>
                 <p class="mt-1 text-sm text-stone-600">Useful free tools</p>
               </div>
-              <div class="rounded-2xl bg-stone-50 p-4">
+              <div class="metric-card rounded-2xl p-4">
                 <p class="text-2xl font-black text-ink">100%</p>
                 <p class="mt-1 text-sm text-stone-600">Mobile friendly design</p>
               </div>
-              <div class="rounded-2xl bg-stone-50 p-4">
+              <div class="metric-card rounded-2xl p-4">
                 <p class="text-2xl font-black text-ink">0 Store</p>
                 <p class="mt-1 text-sm text-stone-600">Aapki file save nahi hoti</p>
               </div>
             </div>
           </div>
-          <div class="rounded-3xl border border-dashed border-brand-300 bg-brand-50/70 p-6 text-sm text-brand-800">
+          <div class="section-shell surface-muted rounded-[2rem] p-6 text-sm text-brand-800">
             <p class="font-semibold">Ad Space</p>
             <p class="mt-2 leading-6">Yahan future me banner ads ya affiliate recommendations show ki ja sakti hain.</p>
           </div>
@@ -140,32 +156,32 @@
         </div>
       </div>
       <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <a href="resume-builder.html" class="tool-card rounded-3xl bg-white p-6 shadow-soft">
+        <a href="resume-builder.html" class="tool-card modern-card rounded-[2rem] p-6">
           <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-xl font-black text-brand-700">R</div>
           <h3 class="mt-5 text-xl font-bold">Resume Builder</h3>
           <p class="mt-2 text-sm leading-6 text-stone-600">Simple form bharo, live preview dekho aur PDF download karo.</p>
         </a>
-        <a href="image-compressor.html" class="tool-card rounded-3xl bg-white p-6 shadow-soft">
+        <a href="image-compressor.html" class="tool-card modern-card rounded-[2rem] p-6">
           <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-100 text-xl font-black text-accent">I</div>
           <h3 class="mt-5 text-xl font-bold">Image Compressor</h3>
           <p class="mt-2 text-sm leading-6 text-stone-600">Photo size kam karo bina heavy software ke.</p>
         </a>
-        <a href="pdf-to-word.html" class="tool-card rounded-3xl bg-white p-6 shadow-soft">
+        <a href="pdf-to-word.html" class="tool-card modern-card rounded-[2rem] p-6">
           <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-xl font-black text-emerald-700">P</div>
           <h3 class="mt-5 text-xl font-bold">PDF to Word</h3>
           <p class="mt-2 text-sm leading-6 text-stone-600">PDF upload karo aur converted DOCX link pao.</p>
         </a>
-        <a href="emi-calculator.html" class="tool-card rounded-3xl bg-white p-6 shadow-soft">
+        <a href="emi-calculator.html" class="tool-card modern-card rounded-[2rem] p-6">
           <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-xl font-black text-sky-700">E</div>
           <h3 class="mt-5 text-xl font-bold">EMI Calculator</h3>
           <p class="mt-2 text-sm leading-6 text-stone-600">Loan EMI, interest aur total payment turant nikalo.</p>
         </a>
-        <a href="age-calculator.html" class="tool-card rounded-3xl bg-white p-6 shadow-soft">
+        <a href="age-calculator.html" class="tool-card modern-card rounded-[2rem] p-6">
           <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-fuchsia-100 text-xl font-black text-fuchsia-700">A</div>
           <h3 class="mt-5 text-xl font-bold">Age Calculator</h3>
           <p class="mt-2 text-sm leading-6 text-stone-600">DOB se exact years, months aur days dekho.</p>
         </a>
-        <div class="rounded-3xl border border-dashed border-stone-300 bg-stone-100/80 p-6">
+        <div class="section-shell surface-muted rounded-[2rem] p-6">
           <p class="text-sm font-semibold uppercase tracking-[0.2em] text-stone-500">Ad Space</p>
           <h3 class="mt-5 text-xl font-bold">Sponsored Placement</h3>
           <p class="mt-2 text-sm leading-6 text-stone-600">Yahan monetization ke liye partner tool cards show ho sakte hain.</p>
@@ -173,7 +189,8 @@
       </div>
     </section>
 
-    <section id="earn-guides" class="bg-white">
+    <section id="earn-guides" class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+      <div class="section-shell rounded-[2rem] px-0">
       <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div class="flex items-end justify-between gap-4">
           <div>
@@ -182,22 +199,23 @@
           </div>
         </div>
         <div class="mt-8 grid gap-5 md:grid-cols-3">
-          <article class="rounded-3xl border border-stone-200 p-6">
+          <article class="modern-card rounded-[2rem] p-6">
             <p class="text-sm font-semibold text-brand-700">Guide 01</p>
             <h3 class="mt-4 text-xl font-bold">Freelancing ka start kaise karein</h3>
             <p class="mt-3 text-sm leading-6 text-stone-600">Profile setup, first gig aur payment basics ko simple steps me samjho.</p>
           </article>
-          <article class="rounded-3xl border border-stone-200 p-6">
+          <article class="modern-card rounded-[2rem] p-6">
             <p class="text-sm font-semibold text-brand-700">Guide 02</p>
             <h3 class="mt-4 text-xl font-bold">AI tools se side income ideas</h3>
             <p class="mt-3 text-sm leading-6 text-stone-600">Content, resume, thumbnail aur client work ke practical use cases.</p>
           </article>
-          <article class="rounded-3xl border border-stone-200 p-6">
+          <article class="modern-card rounded-[2rem] p-6">
             <p class="text-sm font-semibold text-brand-700">Guide 03</p>
             <h3 class="mt-4 text-xl font-bold">YouTube automation basics</h3>
             <p class="mt-3 text-sm leading-6 text-stone-600">Niche research, editing workflow aur simple monetization approach.</p>
           </article>
         </div>
+      </div>
       </div>
     </section>
 
@@ -207,55 +225,83 @@
         <h2 class="mt-2 text-3xl font-black text-ink">Productivity boost ke liye smart tools</h2>
       </div>
       <div class="mt-8 grid gap-5 lg:grid-cols-3">
-        <article class="rounded-3xl bg-white p-6 shadow-soft">
+        <article class="modern-card rounded-[2rem] p-6">
           <h3 class="text-xl font-bold">AI Resume Tips</h3>
           <p class="mt-3 text-sm leading-6 text-stone-600">Resume Builder ke saath better summary aur skills wording ideas add karo.</p>
         </article>
-        <article class="rounded-3xl bg-white p-6 shadow-soft">
+        <article class="modern-card rounded-[2rem] p-6">
           <h3 class="text-xl font-bold">AI Content Workflow</h3>
           <p class="mt-3 text-sm leading-6 text-stone-600">Simple prompt ideas jo beginners ko faster output dene me help karein.</p>
         </article>
-        <article class="rounded-3xl border border-dashed border-stone-300 bg-stone-100/80 p-6">
+        <article class="section-shell surface-muted rounded-[2rem] p-6">
           <h3 class="text-xl font-bold">Featured Ad / Promo</h3>
           <p class="mt-3 text-sm leading-6 text-stone-600">Affiliate SaaS ya AI subscription offers ke liye reserve section.</p>
         </article>
       </div>
     </section>
 
-    <section id="latest-articles" class="bg-white">
+    <section id="latest-articles" class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+      <div class="section-shell rounded-[2rem] px-0">
       <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div>
           <p class="text-sm font-semibold uppercase tracking-[0.22em] text-accent">Latest Articles</p>
           <h2 class="mt-2 text-3xl font-black text-ink">Naye articles aur practical updates</h2>
         </div>
         <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          <article class="rounded-3xl border border-stone-200 p-5">
+          <article class="modern-card rounded-[1.8rem] p-5">
             <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">Career</p>
             <h3 class="mt-3 text-lg font-bold">Freshers ke liye strong resume format</h3>
           </article>
-          <article class="rounded-3xl border border-stone-200 p-5">
+          <article class="modern-card rounded-[1.8rem] p-5">
             <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">Finance</p>
             <h3 class="mt-3 text-lg font-bold">EMI samajhne ka easiest tareeka</h3>
           </article>
-          <article class="rounded-3xl border border-stone-200 p-5">
+          <article class="modern-card rounded-[1.8rem] p-5">
             <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">Productivity</p>
             <h3 class="mt-3 text-lg font-bold">File tools choose karte waqt privacy check</h3>
           </article>
-          <article class="rounded-3xl border border-stone-200 p-5">
+          <article class="modern-card rounded-[1.8rem] p-5">
             <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">AI</p>
             <h3 class="mt-3 text-lg font-bold">Beginners ke liye AI toolkit shortlist</h3>
           </article>
         </div>
       </div>
+      </div>
+    </section>
+
+    <section id="about-developer" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+        <div class="modern-card rounded-[2rem] p-6 sm:p-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-accent">About Developer</p>
+          <h2 class="mt-2 text-3xl font-black text-ink">Built with a practical mindset</h2>
+          <p class="mt-4 text-base leading-7 text-stone-700">
+            Hi, I am Ahmad Faraz Siddiqui. I build simple and useful tools for everyday people to make their work easier.
+          </p>
+        </div>
+        <aside class="glass-panel rounded-[2rem] p-6 sm:p-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-700">Developer Card</p>
+          <h3 class="mt-3 text-2xl font-black text-ink">Ahmad Faraz Siddiqui</h3>
+          <p class="mt-2 text-sm font-semibold text-accent">Web Developer</p>
+          <p class="mt-4 text-sm leading-6 text-stone-700">
+            Focused on fast, easy-to-use web tools that feel approachable for beginners and useful in daily work.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-3 text-sm">
+            <a href="#" class="credit-chip rounded-full px-4 py-2 font-medium text-stone-700">LinkedIn</a>
+            <a href="#" class="credit-chip rounded-full px-4 py-2 font-medium text-stone-700">GitHub</a>
+            <a href="#" class="credit-chip rounded-full px-4 py-2 font-medium text-stone-700">Portfolio</a>
+          </div>
+        </aside>
+      </div>
     </section>
   </main>
 
-  <footer class="border-t border-stone-200 bg-stone-950 text-stone-300">
+  <footer class="mx-auto max-w-7xl px-4 pb-8 pt-6 sm:px-6 lg:px-8">
+    <div class="tool-footer rounded-[2rem] px-6 py-10 text-stone-300 sm:px-8">
     <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div>
-          <a href="index.html" class="text-2xl font-black text-white">ToolMitra</a>
-          <p class="mt-3 max-w-xl text-sm leading-6 text-stone-400">Aapki files server par store nahi hoti. ToolMitra ka goal simple aur fast online utility experience dena hai.</p>
+          <a href="index.html" class="text-2xl font-black text-white">ZamToolmitra</a>
+          <p class="mt-3 max-w-xl text-sm leading-6 text-stone-400">Aapki files server par store nahi hoti. ZamToolmitra ka goal simple aur fast online utility experience dena hai.</p>
         </div>
         <div class="flex flex-wrap gap-4 text-sm font-medium">
           <a href="#" class="transition hover:text-white">Privacy Policy</a>
@@ -264,9 +310,16 @@
           <a href="emi-calculator.html" class="transition hover:text-white">EMI Calculator</a>
         </div>
       </div>
+      <div class="mt-6 border-t border-stone-800 pt-6 text-sm text-stone-400">
+        Developed by <span class="font-bold text-brand-300">Ahmad Faraz Siddiqui</span>
+      </div>
+    </div>
     </div>
   </footer>
 
+  <div class="developer-watermark">Made by Ahmad Faraz Siddiqui</div>
+
   <script src="script.js"></script>
+  </div>
 </body>
 </html>

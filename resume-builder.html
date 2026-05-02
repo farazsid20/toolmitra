@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<!-- Developed by Ahmad Faraz Siddiqui -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Builder - ToolMitra</title>
-  <meta name="description" content="ToolMitra Resume Builder ke saath resume banao, live preview dekho aur PDF download karo.">
+  <title>Resume Builder - ZamToolmitra</title>
+  <meta name="description" content="ZamToolmitra Resume Builder ke saath resume banao, live preview dekho aur PDF download karo.">
+  <meta name="author" content="Ahmad Faraz Siddiqui">
   <meta name="robots" content="index, follow">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -39,18 +41,25 @@
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "ToolMitra Resume Builder",
+      "name": "ZamToolmitra Resume Builder",
+      "author": {
+        "@type": "Person",
+        "name": "Ahmad Faraz Siddiqui"
+      },
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "description": "Build and download a resume with live preview."
     }
   </script>
 </head>
-<body class="tool-page-bg text-ink">
-  <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-    <a href="index.html" class="inline-flex items-center text-sm font-semibold text-brand-700">← Home par wapas</a>
+<body class="site-body tool-page-bg text-ink">
+  <div class="site-layer tool-layout mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <a href="index.html" class="inline-flex items-center text-sm font-semibold text-brand-700">&larr; Home par wapas</a>
+      <div class="credit-chip rounded-full px-3 py-2 text-xs font-semibold text-brand-700">By Ahmad Faraz Siddiqui</div>
+    </div>
     <div class="mt-6 grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
-      <section class="rounded-3xl bg-white p-5 shadow-soft sm:p-7">
+      <section class="tool-hero-card rounded-[2rem] p-5 sm:p-7">
         <div class="flex items-center justify-between gap-4">
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.22em] text-accent">Resume Builder</p>
@@ -63,53 +72,53 @@
         <form id="resumeForm" class="mt-6 space-y-4" novalidate>
           <div>
             <label for="name" class="mb-2 block text-sm font-semibold">Naam *</label>
-            <input id="name" name="name" type="text" required class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
+            <input id="name" name="name" type="text" required class="input-modern w-full rounded-2xl px-4 py-3 outline-none transition">
             <p class="field-error mt-1 text-sm text-red-600"></p>
           </div>
           <div class="grid gap-4 sm:grid-cols-2">
             <div>
               <label for="phone" class="mb-2 block text-sm font-semibold">Phone *</label>
-              <input id="phone" name="phone" type="tel" required class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
+              <input id="phone" name="phone" type="tel" required class="input-modern w-full rounded-2xl px-4 py-3 outline-none transition">
               <p class="field-error mt-1 text-sm text-red-600"></p>
             </div>
             <div>
               <label for="email" class="mb-2 block text-sm font-semibold">Email *</label>
-              <input id="email" name="email" type="email" required class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
+              <input id="email" name="email" type="email" required class="input-modern w-full rounded-2xl px-4 py-3 outline-none transition">
               <p class="field-error mt-1 text-sm text-red-600"></p>
             </div>
           </div>
           <div>
             <label for="education" class="mb-2 block text-sm font-semibold">Education *</label>
-            <textarea id="education" name="education" rows="3" required class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200"></textarea>
+            <textarea id="education" name="education" rows="3" required class="input-modern w-full rounded-2xl px-4 py-3 outline-none transition"></textarea>
             <p class="field-error mt-1 text-sm text-red-600"></p>
           </div>
           <div>
             <label for="skills" class="mb-2 block text-sm font-semibold">Skills *</label>
-            <textarea id="skills" name="skills" rows="3" required placeholder="Example: HTML, CSS, Communication" class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200"></textarea>
+            <textarea id="skills" name="skills" rows="3" required placeholder="Example: HTML, CSS, Communication" class="input-modern w-full rounded-2xl px-4 py-3 outline-none transition"></textarea>
             <p class="field-error mt-1 text-sm text-red-600"></p>
           </div>
           <div>
             <label for="experience" class="mb-2 block text-sm font-semibold">Experience *</label>
-            <textarea id="experience" name="experience" rows="4" required class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200"></textarea>
+            <textarea id="experience" name="experience" rows="4" required class="input-modern w-full rounded-2xl px-4 py-3 outline-none transition"></textarea>
             <p class="field-error mt-1 text-sm text-red-600"></p>
           </div>
           <div>
             <label for="templateStyle" class="mb-2 block text-sm font-semibold">Template style</label>
-            <select id="templateStyle" class="w-full rounded-2xl border border-stone-200 bg-stone-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200">
+            <select id="templateStyle" class="input-modern w-full rounded-2xl px-4 py-3 outline-none transition">
               <option value="minimal">Minimal</option>
               <option value="modern">Modern</option>
               <option value="classic">Classic</option>
             </select>
           </div>
           <div class="flex flex-col gap-3 sm:flex-row">
-            <button type="submit" class="rounded-2xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">Preview update karo</button>
-            <button id="downloadResume" type="button" class="rounded-2xl bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Download PDF</button>
+            <button type="submit" class="primary-button rounded-2xl px-5 py-3 text-sm font-semibold text-white transition">Preview update karo</button>
+            <button id="downloadResume" type="button" class="secondary-button rounded-2xl px-5 py-3 text-sm font-semibold text-white transition">Download PDF</button>
           </div>
           <p id="resumeMessage" class="text-sm font-medium"></p>
         </form>
       </section>
 
-      <section class="rounded-3xl bg-white p-5 shadow-soft sm:p-7">
+      <section class="tool-section-card rounded-[2rem] p-5 sm:p-7">
         <div class="flex items-center justify-between gap-3">
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.22em] text-accent">Live Preview</p>
@@ -138,7 +147,17 @@
         </div>
       </section>
     </div>
+    <footer class="tool-footer mt-8 rounded-[2rem] px-6 py-6 text-sm text-stone-300">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <p>Developed by <span class="font-bold text-brand-300">Ahmad Faraz Siddiqui</span></p>
+        <div class="flex gap-3 text-stone-400">
+          <a href="#" class="hover:text-white">LinkedIn</a>
+          <a href="#" class="hover:text-white">GitHub</a>
+        </div>
+      </div>
+    </footer>
   </div>
+  <div class="developer-watermark">Made by Ahmad Faraz Siddiqui</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="js/resume-builder.js"></script>
